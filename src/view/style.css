@@ -1,0 +1,40 @@
+.screen {
+	-fx-border-color: rgb(49, 89, 23);
+	-fx-background-color: white;
+}
+
+.window{
+	-fx-background-color: #d6e0f6;
+}
+
+.label {
+	-fx-font-family: "Andale Mono";
+   	-fx-effect: dropshadow(gaussian, rgba(67,96,156,0.25) , 0,0,2,2 );
+}
+
+.promptScene {
+	-fx-background-color: #d6e0f6;
+}
+
+.button {
+	-fx-font-family: "Andale Mono";
+	-fx-padding: 6;
+   	-fx-font-size: 1em;
+	-fx-text-fill: white;
+	-fx-background-color: #001A57;
+	-fx-effect: dropshadow(gaussian, rgba(67,96,156,0.25) , 0,0,2,2 );
+}
+
+.menu-button {
+	-fx-font-family: "Andale Mono";
+   	-fx-font-size: 1em;
+   	-fx-border-color: rgb(49, 89, 23);
+}
+
+.text-input {
+	-fx-font-family: "Andale Mono";
+}
+
+.text-field {
+	-fx-font-family: "Andale Mono";
+}

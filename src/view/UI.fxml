@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="506.0" prefWidth="830.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.SLogoGUIController">
+  <children>
+    <AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="506.0" prefWidth="830.0" styleClass="window">
+      <children>
+        <Pane fx:id="myCanvas" layoutX="220.0" layoutY="14.0" prefHeight="440.0" prefWidth="440.0" style="" styleClass="screen">
+          <children>
+            <Label fx:id="workspaceName" layoutX="11.0" layoutY="7.0" text="Workspace 1" />
+          </children>
+          <stylesheets>
+            <URL value="@style.css" />
+          </stylesheets>
+        </Pane>
+        <Button fx:id="myHelpButton" layoutX="24.0" layoutY="461.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="68.0" style="" text="HELP">
+          <stylesheets>
+            <URL value="@style.css" />
+          </stylesheets>
+        </Button>
+        <TextField fx:id="myTextField" layoutX="220.0" layoutY="461.0" prefHeight="33.0" prefWidth="380.0" promptText="Enter command here...">
+          <stylesheets>
+            <URL value="@style.css" />
+          </stylesheets>
+        </TextField>
+        <Button fx:id="myRunButton" layoutX="607.0" layoutY="462.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="53.0" style="" text="RUN">
+          <stylesheets>
+            <URL value="@style.css" />
+          </stylesheets>
+        </Button>
+        <ScrollPane fx:id="myVariablePane" content="$null" layoutX="668.0" layoutY="35.0" prefHeight="193.0" prefWidth="157.0" vbarPolicy="ALWAYS" />
+        <Button fx:id="myCustomizeButton" layoutX="689.0" layoutY="462.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="114.0" style="" text="CUSTOMIZE">
+          <stylesheets>
+            <URL value="@style.css" />
+          </stylesheets>
+        </Button>
+        <ScrollPane id="history" fx:id="myCommandHistoryPane" content="$null" layoutX="10.0" layoutY="67.0" prefHeight="185.0" prefWidth="200.0" styleClass="label" vbarPolicy="ALWAYS">
+          <stylesheets>
+            <URL value="@style.css" />
+          </stylesheets>
+               <content>
+                  <MenuButton fx:id="myMenu1" mnemonicParsing="false" prefHeight="21.625" prefWidth="176.0" style="" text="Choose Workspace" textFill="BLACK" wrapText="false">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Project1" />
+                     </items>
+                     <stylesheets>
+                        <URL value="@style.css" />
+                     </stylesheets>
+                  </MenuButton>
+               </content>
+        </ScrollPane>
+        <Label alignment="CENTER" layoutX="40.0" layoutY="50.0" prefWidth="128.0" text="Command History">
+          <stylesheets>
+            <URL value="@style.css" />
+          </stylesheets>
+        </Label>
+        <Label alignment="CENTER" layoutX="683.0" layoutY="18.0" prefWidth="128.0" text="Variables">
+          <stylesheets>
+            <URL value="@style.css" />
+          </stylesheets>
+        </Label>
+        <Label alignment="CENTER" layoutX="682.0" layoutY="244.0" prefWidth="128.0" text="Custom Commands">
+          <stylesheets>
+            <URL value="@style.css" />
+          </stylesheets>
+        </Label>
+        <ScrollPane fx:id="myCustomPane" content="$null" layoutX="667.0" layoutY="261.0" prefHeight="193.0" prefWidth="157.0" vbarPolicy="ALWAYS" />
+        <Button id="myCustomizeButton" fx:id="myAddWorkspaceButton" alignment="TOP_CENTER" layoutX="169.0" layoutY="13.0" minHeight="22.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="41.0" style="" text="+">
+          <stylesheets>
+            <URL value="@style.css" />
+          </stylesheets>
+        </Button>
+        <Label alignment="CENTER" layoutX="40.0" layoutY="261.0" prefWidth="128.0" text="Properties">
+          <stylesheets>
+            <URL value="@style.css" />
+          </stylesheets>
+        </Label>
+        <Pane fx:id="myPropertyPane" layoutX="10.0" layoutY="278.0" prefHeight="176.00009999999747" prefWidth="186.0" styleClass="label">
+          <stylesheets>
+            <URL value="@style.css" />
+          </stylesheets>
+        </Pane>
+            <MenuButton fx:id="myMenuButton" layoutX="10.0" layoutY="13.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="150.0" style="" text="Select Project" textFill="BLACK" wrapText="false">
+               <font>
+                  <Font size="11.0" />
+               </font>
+               <items>
+                  <MenuItem fx:id="myProject1" mnemonicParsing="false" text="Project 1" />
+                  <MenuItem fx:id="myProject2" mnemonicParsing="false" text="Project 2" />
+                  <MenuItem fx:id="myProject3" mnemonicParsing="false" text="Project 3" />
+                  <MenuItem fx:id="myProject4" mnemonicParsing="false" text="Project 4" />
+                  <MenuItem fx:id="myProject5" mnemonicParsing="false" text="Project 5" />
+               </items>
+               <stylesheets>
+                  <URL value="@style.css" />
+               </stylesheets>
+            </MenuButton>
+            <Button fx:id="myReadButton" layoutX="122.0" layoutY="461.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="68.0" style="" text="READ FILE">
+               <stylesheets>
+                  <URL value="@style.css" />
+               </stylesheets>
+            </Button>
+      </children>
+      <stylesheets>
+        <URL value="@style.css" />
+      </stylesheets>
+    </AnchorPane>
+  </children>
+</AnchorPane>

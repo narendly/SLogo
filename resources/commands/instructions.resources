@@ -1,0 +1,2 @@
+RGBColor:RGB Color out of bounds! Note, color component values are nonnegative integers less than 256 specifying an amount of red, green, and blue.
+Logarithm:Can't take logarithm of negative number.
